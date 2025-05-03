@@ -1,4 +1,8 @@
+package main.java.com.conversorDeMoedas.service;
+
 import com.google.gson.Gson;
+import main.java.com.conversor.model.ExchangeRateResponse;
+
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -96,7 +100,7 @@ public class ConversorDeMoedas {
 
         // Atualizar histórico e retornar resultado
         historico.add(registro);
-        System.out.println(registro);
+
         return registro;
     }
 
@@ -149,5 +153,4 @@ public class ConversorDeMoedas {
             }
         }
     }
-
 }

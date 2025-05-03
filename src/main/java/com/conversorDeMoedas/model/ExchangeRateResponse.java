@@ -1,3 +1,5 @@
+package main.java.com.conversor.model;
+
 import java.util.Collections;
 import java.util.Map;
 
@@ -7,7 +9,7 @@ import java.util.Map;
  */
 public class ExchangeRateResponse {
     private final String result;
-    final Map<String, Double> conversion_rates;
+    public final Map<String, Double> conversion_rates;
 
     public ExchangeRateResponse(String result, Map<String, Double> conversion_rates) {
         this.result = result;

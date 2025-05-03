@@ -1,3 +1,5 @@
+import main.java.com.conversorDeMoedas.service.ConversorDeMoedas;
+
 import java.util.Scanner;
 
 public class Main {
@@ -6,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner leitura = new Scanner(System.in);
-        ConversorDeMoedas conversor = new ConversorDeMoedas();
+        main.java.com.conversorDeMoedas.service.ConversorDeMoedas conversor = new main.java.com.conversorDeMoedas.service.ConversorDeMoedas();
 
         try {
             while (true) {
@@ -21,7 +23,7 @@ public class Main {
                 if (opcao != TOTAL_OPCOES) {
                     double valor = lerValor(leitura);
                     String resultado = conversor.converter(opcao, valor); // Agora retorna o resultado
-                    System.out.println("\nResultado da conversão: " + resultado); // Exibe o resultado
+                    System.out.println("\nResultado da conversão: " + resultado + "\n"); // Exibe o resultado
                 } else {
                     System.out.println("\nHistórico de conversões:");
                     conversor.exibirHistorico(); // Exibe todas as conversões anteriores
@@ -69,7 +71,7 @@ public class Main {
     private static double lerValor(Scanner scanner) {
         // Lê e valida o valor a ser convertido, aceitando ',' ou '.' como separador decimal
         while (true) {
-            System.out.print("Digite o valor a ser convertido (deve ser positivo): ");
+            System.out.print("Digite o valor a ser convertido (ex: 100 ou 100,50): ");
             try {
                 String input = scanner.nextLine();
                 double valor = Double.parseDouble(input.replace(",", "."));

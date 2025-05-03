@@ -39,5 +39,5 @@ Como desafio adicional, foi implementado um sistema de **Histórico de Conversõ
    cd ChallengeConversorDeMoedas
 4. Compile e execute:
    ```bash
-   javac Main.java ConversorDeMoedas.java
+   javac Main.java main.java.com.conversor.service.ConversorDeMoedas.java
    java Main
