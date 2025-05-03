@@ -111,7 +111,7 @@ public class ConversorDeMoedas {
         }
     }
 
-    // Método para obter informações da conversão
+
     private ConversaoInfo obterInfoConversao(int opcao) {
         switch (opcao) {
             case 1:
@@ -135,7 +135,7 @@ public class ConversorDeMoedas {
         }
     }
 
-    // Método para formatar o resultado
+
     private String formatarResultado(double valor, String origem, double resultado, String destino) {
         return String.format("%.2f %s → %.2f %s", valor, origem, resultado, destino);
     }
