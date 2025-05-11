@@ -33,7 +33,7 @@ Como desafio adicional, foi implementado um sistema de **Histórico de Conversõ
 2. Clone o repositório: 
    ```bash
    git clone https://github.com/geovanigaldino/ChallengeConversorDeMoedas.git
-   cd conversor-moedas
+   cd ChallengeConversorDeMoedas
 3. Navegue até o diretório do projeto:
    ```bash
    cd ChallengeConversorDeMoedas
